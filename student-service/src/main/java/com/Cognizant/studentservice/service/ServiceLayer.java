@@ -33,7 +33,13 @@ public class ServiceLayer {
 
 
         private StudentViewModel BuildStudentViewModel (Student student, Course course){
+            StudentViewModel studentViewModel = new StudentViewModel();
+            studentViewModel.setStudentId(student.getStudentId());
+            studentViewModel.setStudentFirstName(student.getStudentFirstName());
+            studentViewModel.setStudentLastName(student.getStudentFirstName());
 
         }
+
+
     }
 }
